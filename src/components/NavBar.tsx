@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <nav className="relative z-10 dark:bg-gray-900/20 flex items-center justify-between px-8 py-8 font-mono">
+    <nav className="relative z-10 dark:bg-gray-900/20 flex items-center justify-between px-8 py-5 font-mono">
       <div className="flex items-center space-x-2">
         <Image
           src="/consist-stats-logo.png"

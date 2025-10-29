@@ -64,9 +64,16 @@ export default function LandingPage() {
         className="relative z-10 py-24 px-6 border-t text-black dark:text-white border-gray-200"
       >
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-bold dark:text-white text-black mb-12">
-            Why <span className="text-[#0a93d8]">ConsistStats?</span>
-          </h2>
+          <div className="text-center w-full mb-12 flex flex-col justify-center items-center">
+            <h2 className="text-4xl font-bold dark:text-white text-black mb-5">
+              Why <span className="text-[#0a93d8]">ConsistStats?</span>
+            </h2>
+            <p className="text-center text-md dark:text-gray-500 text-gray-600 mt-2 max-w-3xl">
+              Gain powerful insights into your coding habits and supercharge
+              your productivity with our suite of analytics tools.
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-10">
             {/* Card 1 */}
             <div className="p-8 border-[0.5] border-blue-200/20 dark:bg-gray-700/20 bg-white md:mb-20 shadow-md rounded-2xl hover:shadow-xl transition transform hover:-translate-y-2">
