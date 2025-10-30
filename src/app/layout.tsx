@@ -1,13 +1,7 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import { IBM_Plex_Mono, Inter } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
+import { IBM_Plex_Mono } from "next/font/google";
 
 const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
@@ -27,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${plexMono.variable}`}>
+    <html lang="en" className={` ${plexMono.variable}`}>
       <body className="antialiased bg-white text-black">{children}</body>
     </html>
   );

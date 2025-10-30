@@ -31,31 +31,27 @@ export default function LandingPage() {
             maskImage:
               "radial-gradient(ellipse 60% 60% at 50% 50%, #000 30%, transparent 70%)",
           }}
-        >
-          {/* HERO SECTION */}
-          <section
-            id="features"
-            className="relative z-10 flex flex-col items-center justify-center text-center min-h-[80vh] px-6 opacity-1000"
-          >
-            <h1 className="text-5xl md:text-7xl md:mt-10 font-extrabold dark:text-white text-black max-w-3xl leading-tight tracking-tight">
-              Track your <span className="text-[#0a93d8]">coding rhythm</span>{" "}
-              with style.
-            </h1>
-            <p className="text-lg dark:text-gray-800 text-gray-600 mt-6 max-w-xl">
-              Visualize your coding journey, stay consistent, and build better
-              habits — powered by insights that matter.
-            </p>
+        ></div>
+        {/* HERO SECTION */}
+        <section className="absolute  w-full z-10 flex flex-col items-center justify-center text-center min-h-[80vh] px-6 opacity-1000">
+          <h1 className="text-5xl md:text-7xl md:mt-10 font-extrabold dark:text-white text-black max-w-3xl leading-tight tracking-tight z-10">
+            Track your <span className="text-[#0a93d8]">coding rhythm</span>{" "}
+            with style.
+          </h1>
+          <p className="text-lg dark:text-gray-800 text-gray-600 mt-6 max-w-xl">
+            Visualize your coding journey, stay consistent, and build better
+            habits — powered by insights that matter.
+          </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <button className="bg-[#0a93d8] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-black hover:text-white transition">
-                Start Tracking
-              </button>
-              <button className="border border-black text-black dark:bg-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#0a93d8] hover:text-white transition">
-                Learn More
-              </button>
-            </div>
-          </section>
-        </div>
+          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <button className="bg-[#0a93d8] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-black hover:text-white transition">
+              Start Tracking
+            </button>
+            <button className="border border-black text-black dark:bg-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#0a93d8] hover:text-white transition">
+              Learn More
+            </button>
+          </div>
+        </section>
       </main>
 
       {/* FEATURE SECTION */}
