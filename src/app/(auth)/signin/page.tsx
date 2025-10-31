@@ -7,8 +7,10 @@ import { redirect } from "next/navigation";
 
 const page = async () => {
   const session = await auth();
-  if (session) redirect("/dashboard");
 
+  if (session?.user) {
+    redirect("/dashboard");
+  }
   return (
     <main className="flex flex-col gap-10 items-center justify-center h-screen w-full dark:bg-[#03091a] bg-[#03091a]">
       <div className="flex items-center w-full justify-center space-x-2">
