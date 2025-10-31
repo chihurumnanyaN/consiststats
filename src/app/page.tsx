@@ -1,4 +1,7 @@
 import NavBar from "@/components/NavBar";
+
+//from next
+import Link from "next/link";
 import React from "react";
 import {
   FaGithub,
@@ -44,12 +47,18 @@ export default function LandingPage() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <button className="bg-[#0a93d8] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-black hover:text-white transition">
+            <Link
+              href="/signin"
+              className="bg-[#0a93d8] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-black hover:text-white transition"
+            >
               Start Tracking
-            </button>
-            <button className="border border-black text-black dark:bg-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#0a93d8] hover:text-white transition">
+            </Link>
+            <Link
+              href="/about"
+              className="border border-black text-black dark:bg-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#0a93d8] hover:text-white transition"
+            >
               Learn More
-            </button>
+            </Link>
           </div>
         </section>
       </main>
