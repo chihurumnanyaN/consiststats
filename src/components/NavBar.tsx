@@ -1,20 +1,9 @@
-import React from "react";
-import Image from "next/image";
+import Logo from "./Logo";
 
 const NavBar = () => {
   return (
     <nav className="relative z-10 dark:bg-gray-900/20 flex items-center justify-between px-8 py-5 font-mono">
-      <div className="flex items-center space-x-2">
-        <Image
-          src="/consist-stats-logo.png"
-          alt="ConsistStats Logo"
-          width={48} //
-          height={48} //
-        />
-        <h1 className="text-2xl font-bold dark:text-white text-black">
-          Consist<span className="text-[#0a93d8]">Stats</span>
-        </h1>
-      </div>
+      <Logo />
       <div className="space-x-6 dark:text-white text-black font-medium">
         <a href="#features" className="hover:text-[#0a93d8] transition">
           Features
