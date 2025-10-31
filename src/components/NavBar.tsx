@@ -5,14 +5,14 @@ const NavBar = () => {
     <nav className="relative z-10 dark:bg-gray-900/20 flex items-center justify-between px-8 py-5 font-mono">
       <Logo />
       <div className="space-x-6 dark:text-white text-black font-medium">
-        <a href="#features" className="hover:text-[#0a93d8] transition">
+        <a href="/features" className="hover:text-[#0a93d8] transition">
           Features
         </a>
-        <a href="#about" className="hover:text-[#0a93d8] transition">
+        <a href="/about" className="hover:text-[#0a93d8] transition">
           About
         </a>
         <a
-          href="#get-started"
+          href="/dashboard"
           className="bg-[#0a93d8] text-white px-6 py-4 rounded-lg hover:bg-black transition"
         >
           Get Started

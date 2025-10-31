@@ -37,7 +37,7 @@ const SideNav = () => {
       <div>
         {/* logo section */}
         <div className="mb-10">
-          <Logo width={30} height={30} textSize="lg" />
+          <Logo width={30} height={30} textSize="lg" darkMode />
         </div>
 
         {/* nav links */}
