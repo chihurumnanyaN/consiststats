@@ -1,23 +1,78 @@
-import Logo from "./Logo";
+"use client";
+
+import React, { useState } from "react";
+import Image from "next/image";
+import { FiMenu, FiX } from "react-icons/fi"; // 👈 using react-icons
 
 const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <nav className="relative z-10 dark:bg-gray-900/20 flex items-center justify-between px-8 py-5 font-mono">
-      <Logo />
-      <div className="space-x-6 dark:text-white text-black font-medium">
-        <a href="/features" className="hover:text-[#0a93d8] transition">
+    <nav className="relative z-10 w-full dark:bg-gray-900/30 bg-white/10 backdrop-blur-lg flex items-center justify-between px-6 sm:px-10 py-4 font-mono border-b border-white/10">
+      {/* Logo Section */}
+      <div className="flex items-center space-x-2">
+        <Image
+          src="/consist-stats-logo.png"
+          alt="ConsistStats Logo"
+          width={40}
+          height={40}
+          className="rounded-lg"
+        />
+        <h1 className="text-xl sm:text-2xl font-bold dark:text-white text-black">
+          Consist<span className="text-[#0a93d8]">Stats</span>
+        </h1>
+      </div>
+
+      {/* Desktop Links */}
+      <div className="hidden md:flex items-center space-x-8 dark:text-white text-black font-medium">
+        <a href="#features" className="hover:text-[#0a93d8] transition">
           Features
         </a>
-        <a href="/about" className="hover:text-[#0a93d8] transition">
+        <a href="#about" className="hover:text-[#0a93d8] transition">
           About
         </a>
         <a
-          href="/dashboard"
-          className="bg-[#0a93d8] text-white px-6 py-4 rounded-lg hover:bg-black transition"
+          href="#get-started"
+          className="bg-[#0a93d8] text-white px-5 py-3 rounded-lg hover:bg-black transition"
         >
           Get Started
         </a>
       </div>
+
+      {/* Mobile Menu Button */}
+      <button
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className="md:hidden flex items-center justify-center p-2 rounded-lg dark:text-white text-black hover:bg-white/10 transition"
+      >
+        {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+      </button>
+
+      {/* Mobile Dropdown */}
+      {isMenuOpen && (
+        <div className="absolute top-full left-0 w-full dark:bg-gray-900/95 bg-white/90 backdrop-blur-lg flex flex-col items-center space-y-6 py-6 border-t border-white/10 transition-all duration-300 md:hidden">
+          <a
+            href="#features"
+            className="hover:text-[#0a93d8] dark:text-white text-black transition"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Features
+          </a>
+          <a
+            href="#about"
+            className="hover:text-[#0a93d8] dark:text-white text-black transition"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            About
+          </a>
+          <a
+            href="#get-started"
+            className="bg-[#0a93d8] text-white px-6 py-3 rounded-lg hover:bg-black transition"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Get Started
+          </a>
+        </div>
+      )}
     </nav>
   );
 };

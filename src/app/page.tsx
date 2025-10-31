@@ -36,8 +36,8 @@ export default function LandingPage() {
           }}
         ></div>
         {/* HERO SECTION */}
-        <section className="absolute  w-full z-10 flex flex-col items-center justify-center text-center min-h-[80vh] px-6 opacity-1000">
-          <h1 className="text-5xl md:text-7xl md:mt-10 font-extrabold dark:text-white text-black max-w-3xl leading-tight tracking-tight z-10">
+        <section className="absolute  w-full flex flex-col items-center justify-center text-center min-h-[80vh] px-6 opacity-1000">
+          <h1 className="text-5xl md:text-7xl md:mt-10 font-extrabold dark:text-white text-black max-w-3xl leading-tight tracking-tight ">
             Track your <span className="text-[#0a93d8]">coding rhythm</span>{" "}
             with style.
           </h1>
