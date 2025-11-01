@@ -9,7 +9,8 @@ const SignOut = () => {
       <button
         type="submit"
         className="flex items-center justify-center gap-2 w-fit px-4 py-2 rounded-lg 
-                   bg-red-600/10 text-red-600 font-medium hover:bg-red-600/80 transition-all"
+                   bg-red-600/10 text-red-600 font-medium hover:bg-red-600/70 
+                   border border-red-600/7 hover:border-red-600 transition-all"
       >
         <FaSignOutAlt className="text-lg" />
         <span>Sign Out</span>
